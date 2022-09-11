@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span>PAPIER</span>
+        <span>KAMIEŃ</span>
+        <span>NOŻYCE</span>
+      </h1>
 
-<header>
-  <h1>
-    <span>ROCK</span>
-    <span>PAPER</span>
-    <span>SCISSORS</span>
-  </h1>
-  
-  <div class="score">
-    <span>
-      SCORE
-    </span>
-    <strong class="points">
-      12
-    </strong>
-  </div>
-</header>
+      <div class="score">
+        <span> PUNKTY </span>
+        <strong class="points"> 12 </strong>
+      </div>
+    </header>
 
-  <!--
+    <main>
+      <section class="fight">
+        <div class="pick">
+          <span class="pick__title">WYBRAŁEŚ</span>
+          <div class="button button--paper">
+            <div class="button_image_container">
+              <img src="./images/icon-paper.svg" alt="Papier" />
+            </div>
+          </div>
+        </div>
+        <div class="pick">
+          <span class="pick__title">RYWAL WYBRAŁ</span>
+          <div class="pick__placeHolder"></div>
+        </div>
+      </section>
+
+      <section class="options">
+        <button class="button button--paper">
+          <div class="button_image_container">
+            <img src="./images/icon-paper.svg" alt="Papier" />
+          </div>
+        </button>
+
+        <button class="button button--rock">
+          <div class="button_image_container">
+            <img src="./images/icon-rock.svg" alt="Kamień" />
+          </div>
+        </button>
+
+        <button class="button button--scissors">
+          <div class="button_image_container">
+            <img src="./images/icon-scissors.svg" alt="Nożyce" />
+          </div>
+        </button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+    <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  -->
-</body>
+--></body>
 </html>
