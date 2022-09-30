@@ -33,40 +33,49 @@
     </header>
 
     <main>
-      <section class="fight">
-        <div class="pick">
-          <span class="pick__title">WYBRAŁEŚ</span>
-          <div class="button button--paper">
-            <div class="button_image_container">
-              <img src="./images/icon-paper.svg" alt="Papier" />
-            </div>
-          </div>
-        </div>
-        <div class="pick">
-          <span class="pick__title">RYWAL WYBRAŁ</span>
-          <div class="pick__placeHolder"></div>
-        </div>
-      </section>
-
       <section class="options">
-        <button class="button button--paper">
-          <div class="button_image_container">
-            <img src="./images/icon-paper.svg" alt="Papier" />
-          </div>
-        </button>
+                <button class="button button--paper" data-pick="paper">
+                    <div class="button__image-container">
+                        <img src="./images/icon-paper.svg" alt="Paper" />
+                    </div>
+                </button>
+                <button class="button button--scissors" data-pick="scissors">
+                    <div class="button__image-container">
+                        <img src="./images/icon-scissors.svg" alt="Scissors" />
+                    </div>
+                </button>
+                <button class="button button--rock" data-pick="rock">
+                    <div class="button__image-container">
+                        <img src="./images/icon-rock.svg" alt="Rock" />
+                    </div>
+                </button>
+            </section>
+            <section class="fight">
+                <div class="pick pick--player">
+                    <span class="pick__title">YOU PICKED</span>
+                    <div class="pick__container pick__container--player">
+                        <div class="button button--paper">
+                            <div class="button__image-container">
+                                <img
+                                    src="./images/icon-paper.svg"
+                                    alt="Paper"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pick pick--ai">
+                    <span class="pick__title">THE HOUSSE PICKED</span>
+                    <div class="pick__container pick__container--ai"></div>
+                </div>
 
-        <button class="button button--rock">
-          <div class="button_image_container">
-            <img src="./images/icon-rock.svg" alt="Kamień" />
-          </div>
-        </button>
-
-        <button class="button button--scissors">
-          <div class="button_image_container">
-            <img src="./images/icon-scissors.svg" alt="Nożyce" />
-          </div>
-        </button>
-      </section>
+                <div class="result">
+                    <span class="result__text"></span>
+                    <button class="result__button" tabindex="-1">
+                        PLAY AGAIN
+                    </button>
+                </div>
+            </section>
     </main>
     <script src="app.js"></script>
     <!--
